@@ -1,177 +1,59 @@
-# SOP Management System
+# LoginApp
 
-## Project Overview
+This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.7.
 
-The SOP Management System is a full-stack web application developed for managing Standard Operating Procedures (SOP), Process Master, User Registration, and Knowledge Articles within an organization. The system helps in centralizing business process documentation, improving workflow management, and maintaining role-based access control for Admin and Users.
+## Development server
 
-
----
-
-## Technologies Used
-
-### Frontend
-
-* Angular 16
-* TypeScript
-* Bootstrap
-* HTML
-* CSS
-
-### Backend
-
-* Node.js
-* Express.js
-
-### Database
-
-* MySQL
-
-### Tools
-
-* VS Code
-* MySQL Workbench
-* GitHub
-
----
-
-## Features
-
-### Login Module
-
-* User login functionality
-* Credential validation
-* LocalStorage-based session handling
-
-### User Registration
-
-* Add new users
-* Update user details
-* Delete users
-* Role assignment (Admin / User)
-* Process allocation
-* Active status management
-
-### Process Master
-
-* Add new business processes
-* Update existing processes
-* Edit/Delete process records
-* Active status management
-
-### Knowledge Articles
-
-* Process-wise knowledge article management
-* Activity-based filtering
-* Create SOP popup
-* Document reference handling
-* Search functionality
-
-### Role-Based Access
-
-* Admin users can manage all modules
-* Users can view process and knowledge articles
-
----
-
-## Database Tables
-
-### users
-
-Stores employee details and access roles
-
-### processes
-
-Stores process master records
-
-### knowledge_articles
-
-Stores SOP-related documents and activity records
-
----
-
-## How to Run the Project
-
-### Step 1: Clone Repository
-
-```bash
-git clone YOUR_GITHUB_REPOSITORY_LINK
-```
-
-### Step 2: Install Frontend Dependencies
-
-```bash
-npm install
-```
-
-### Step 3: Install Backend Dependencies
-
-```bash
-npm install express mysql cors body-parser
-```
-
-### Step 4: Setup MySQL Database
-
-Create database:
-
-```sql
-CREATE DATABASE login_app;
-```
-
-Import required tables:
-
-* users
-* processes
-* knowledge_articles
-
-### Step 5: Update MySQL Connection
-
-In `server.js`, update:
-
-```js
-host: 'localhost',
-user: 'root',
-password: 'your_password',
-database: 'login_app'
-```
-
-### Step 6: Run Backend
-
-```bash
-node server.js
-```
-
-### Step 7: Run Angular Frontend
+To start a local development server, run:
 
 ```bash
 ng serve
 ```
 
-Open browser:
+Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
-```text
-http://localhost:4200
+## Code scaffolding
+
+Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+
+```bash
+ng generate component component-name
 ```
 
----
+For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
 
-## Project Screenshots
+```bash
+ng generate --help
+```
 
+## Building
 
-* Login Page
-* User Registration
-* Process Master
-* Knowledge Articles
-* Create SOP Popup
-* MySQL Tables
+To build the project run:
 
+```bash
+ng build
+```
 
----
+This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
 
-## Author
+## Running unit tests
 
-### Rahil Siddiqui
+To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
 
-Full Stack Development Project
-Angular | Node.js | MySQL | Express.js
+```bash
+ng test
+```
 
----
+## Running end-to-end tests
+
+For end-to-end (e2e) testing, run:
+
+```bash
+ng e2e
+```
+
+Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+
+## Additional Resources
+
+For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
