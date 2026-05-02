@@ -4,11 +4,10 @@
 
 The SOP Management System is a full-stack web application developed for managing Standard Operating Procedures (SOP), Process Master, User Registration, and Knowledge Articles within an organization. The system helps in centralizing business process documentation, improving workflow management, and maintaining role-based access control for Admin and Users.
 
-This project was developed during my internship at HCLTech as part of Fund Planning Portal, SOP, and APM operations.
 
 ---
 
-## khoquhduhqeduigqwuiegvFrontend
+## Frontend
 
 * Angular 16
 * TypeScript
